@@ -1,0 +1,15 @@
+1. Viết chương trình java đơn giản sau (không sử dụng package):
+a. Dùng một chương trình soạn thảo để tạo 1 file java với nội dung sau:
+public class HelloWorld {
+    public static void main(String[] args) {
+        /* In dong chu Hello, World! tren standard output. */
+        System.out.println("Hello World!");
+    }
+}
+b. Biên dịch file đã tạo ở bước a thành file class.
+c. Chạy file class đã tạo ở bước b trong cửa sổ MS-DOS.
+
+2. Viết chương trình java để tính tổng 2 số được nhập từ bàn phím và in ra màn hình tổng của 2 số đó.
+Gợi ý: dùng phương thức Integer.parseInt(var) để chuyển ký tự hoặc chuỗi var thành số nguyên
+
+3. Viết chương trình java để nhập 2 số từ bàn phím và in ra màn hình số lớn nhất trong 2 số.
