@@ -1,0 +1,36 @@
+1. Khai báo biến local, nhập giá trị cho biến local từ bàn phím và in giá trị của biến local ra output.
+2. Khai báo biến instance, nhập giá trị cho biến instance từ bàn phím và in giá trị của biến instance ra output.
+3. Khai báo biến static, nhập giá trị cho biến static từ bàn phím và in giá trị của biến static ra output.
+4a. Khai báo và khởi tạo giá trị các biến (dùng literal) có các kiểu dữ liệu nguyên thủy (primitive):
+	byte
+	short
+	int
+	long
+	float
+	double
+	char
+	boolean
+4b. in ra output giá trị của các biến đã khai báo.
+5. In ra output nội dung sau đây:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Class jQuery</title>
+        <meta charset="UTF-8">
+        <script>            
+            function clickEvent()
+            {
+                var element = $('.container');
+                alert(element.length);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            Container
+        </div>
+    </body>
+</html>
+6. Viết chương trình nhập vào tuổi và họ tên của một người . In tuổi và họ tên vừa nhập ra output.
+7. Nhập vào 3 số từ bàn phím. Dùng toán tử ?: để tìm giá trị lớn nhất của 3 số và in ra output.
+8. Nhập vào 3 số nguyên từ bàn phím. Tìm giá trị trung bình của 3 số và in ra output.

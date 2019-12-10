@@ -13,6 +13,7 @@ import java.util.Scanner;
  * @author TAI
  */
 public class session0102_baitap03 {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -21,10 +22,10 @@ public class session0102_baitap03 {
             int a = input.nextInt();
             System.out.println("Input b: ");
             int b = input.nextInt();
-            if(a>b){
-                System.out.println("Max :"+a);
-            }else{
-                System.out.println("Max :"+b);
+            if (a > b) {
+                System.out.println("Max :" + a);
+            } else {
+                System.out.println("Max :" + b);
             }
         }
     }
