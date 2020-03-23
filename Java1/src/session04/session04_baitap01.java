@@ -17,16 +17,14 @@ public class session04_baitap01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n;
-        do {
-            System.out.print("Nhập vào số nguyên bất kỳ: ");
-            n = input.nextInt();
-        } while (n < 0);
+        System.out.print("Nhập vào số nguyên bất kỳ: ");
+        n = input.nextInt();
         if (n > 100) {
             System.out.println("Số vừa nhập lớn hơn 100");
-        }else{
-            if(n==100){
+        } else {
+            if (n == 100) {
                 System.out.println("Số vừa nhập là 100");
-            }else{
+            } else {
                 System.out.println("Số vừa nhập nhỏ hơn 100");
             }
         }
