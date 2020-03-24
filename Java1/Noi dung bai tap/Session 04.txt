@@ -1,0 +1,31 @@
+﻿1. Viết chương trình để nhập một số nguyên bất kỳ từ bàn phím và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn 
+hay nhỏ hơn 100.
+2. Viết một chương trình để nhắc người dùng nhập 3 số nguyên và tìm giá trị lớn nhất.
+3.  Viết chương trình nhập vào 2 số nguyên, hiển thị chức năng cho phép người dùng lựa chọn. Dùng 02 cách: if-else if và switch:
+Nhấn phím số 1: Thực hiện phép cộng
+Nhấn phím số 2: Thực hiện phép trừ
+Nhấn phím số 3: Thực hiện phép nhân
+Nhấn phím số 4: Thực hiện phép chia
+4. Viết chương trình nhập vào 2 số a và b và kiểm tra a có chia hết cho b hay không?
+5. Viết chương trình giải phương trình bậc hai (ax2 + bx + c = 0) với a,b,c nhập từ bàn phím.
+6. Viết chương trình nhập vào điểm 3 môn thi: Toán, Lý, Hóa của học sinh. 
+Nếu tổng điểm >= 15 và không có môn nào dưới 4 thì in kết quả đậu. 
+Nếu đậu mà các môn đều lớn hơn 5 thì in ra lời phê "Học đều các môn", 
+ngược lại in ra "Học chưa đều các môn", các trường hợp khác là "Thi hỏng".
+7. Viết chương trình yêu cầu người dùng nhập vào 1 tháng và năm bất kì, 
+sau đó in ra màn hình xem tháng vừa nhập vào có bao nhiêu ngày trong năm đó ?
+8. Nhập vào một số gọi là tháng trong năm.
+Sau đó in ra màn hình tên tháng đó theo quy tắc:
+1, 2, 3: XUAN
+4, 5, 6: HA
+7, 8, 9: THU
+10, 11, 12: DONG
+Dùng 02 cách: if-else if và switch
+9. Nhập vào một số gọi là điểm trung bình của 1 học sinh.
+Sau đó in ra màn hình xếp loại học tập của học sinh đó theo quy tắc sau:
+	+ >= 9.0 là XUẤT SẮC
+	+ 9 < điểm <= 8 là GIỎI
+	+ 8 < điểm <= 6.5 là KHÁ
+	+ 6.5 < điểm <= 5.0 là TRUNG BÌNH
+	+ còn lại là YẾU
+	Gợi ý: Dùng các phép toán so sánh, phép toán logic.
