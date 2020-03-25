@@ -1,0 +1,21 @@
+﻿1. Nhập vào từ bàn phím 1 số nguyên dương n, sau đó in ra từ 1 đến n có bao nhiêu số chia hết cho 3.
+2. Hay in ra 10 so nguyen duong dau tien chia het cho 5
+3. Hay yeu cau nguoi dung nhap vao 1 so le, neu khong dung yeu cau nhap lai.
+4. Yêu cầu người dùng nhập đúng yêu cầu: DIEM phải từ 0 đến 10 (dùng do ..while)
+5. Yêu cầu người dùng nhập đúng yêu cầu: THANG phải từ 1 đến 12 (dùng do ..while)
+6. Viết chương trình nhập vào N số nguyên và tính tổng bậc 3 N số nguyên.
+7. Viết chương trình tính tổng nghịch đảo của N số nguyên đầu tiên theo công thức
+S = 1 + 1/2 + 1/3 + … + 1/N
+8. Viết chương trình nhập vào số nguyên N và tính tổng bình phương các số lẻ từ 1 đến N.
+9. Viết chương trình nhập vào 1 số từ 0 đến 9. In ra chữ số tương ứng. Ví dụ: nhập vào số 5, in ra "Năm".
+Chương trình chỉ dừng khi nhập 1 số không phải từ 0 đến 9.
+10. Viết chương trình vẽ hình chữ nhật bằng các dấu *
+	**********
+	**********
+	**********
+	**********
+11. Viết chương trình vẽ hình chữ nhật rỗng bằng các dấu *
+	**********
+	*               *
+	*               *
+	**********
