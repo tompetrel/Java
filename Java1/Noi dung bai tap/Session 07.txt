@@ -1,0 +1,1 @@
+﻿Làm lại bài tập Session 06: dùng cách truyền tham số đối tượng cho phương thức để nhập các giá trị cần thiết của Class.

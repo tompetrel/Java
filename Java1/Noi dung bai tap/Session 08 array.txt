@@ -1,0 +1,46 @@
+﻿1. Nhập vào từ bàn phím 10 số lẻ nguyên dương vào mảng, nếu không đúng bắt nhập lại.
+a) Sau đó tính tổng 5 số lẻ đầu tiên.
+b) Tính tổng 5 số lẻ cuối cùng.
+c) Tính tổng các số lẻ ở vị trí lẻ.
+2. Nhập vào từ bàn phím 10 số nguyên dương vào mảng
+a) In ra các số theo hướng ngược lại so với thứ tự nhập.
+b) In ra các số theo hướng ngược lại so với thứ tự nhập tại vị trí chẵn.
+3. Nhập vào từ bàn phím ma trận vuông 4 x 4 các số nguyên dương.
+a) In ma trận vừa nhập ra màn hình.
+b) Đếm có bao nhiêu số lẻ trong ma trận.
+c) In ra các tổng từng dòng của ma trận.
+d) Tìm số lớn nhất, bé nhất trong ma trận.
+e) In ra 2 tổng của 2 đường chéo của ma trận.
+f) In ra vi trí xuất hiện của các phần từ có giá trị > 5 trong ma trận.
+4. Nhập mảng n phần tử số nguyên dương từ bàn phím
+a/ Liệt kê các số chẵn ở vị trí chẵn trong mảng
+b/ Liệt kê các số lẻ ở vị trí lẻ trong mảng.
+c/ Tính tổng các số ở vị trí lẻ trong mảng.
+d/ Tính tổng các số ở vị trí chẵn trong mảng.
+e/ Tìm số lớn nhất, bé nhất trong mảng.
+f/ Nhập vào 1 số x từ bàn phím, in ra danh sách số số trong mảng lớn hơn x, các số trong mảng nhỏ hơn x.
+g/ Tìm số lớn thứ 2 trong mảng.
+h/ Tìm số nhỏ thứ 2 trong mảng.
+i/ In ra danh sách các số trùng nhau trong mảng.
+5. Nhập vào mảng 2 chiều 3x4 các số nguyên dương.
+a/ Tìm số nhỏ nhất trong mảng 2 chiều và in ra vị trí của nó trong mảng 2 chiều.
+b/ Tìm số lớn nhất trong mảng 2 chiều và in ra vị trí của nó trong mảng 2 chiều.
+c/ Tìm số nguyên tố trong mảng 2 chiều và in ra vị trí của nó trong mảng 2 chiều.
+d/ Tính trung bình cộng của từng dòng trong mảng 2 chiều rồi in ra màn hình.
+e/ In ra các số trùng nhau trong mảng 2 chiều.
+f/ Nhập vào 1 số x rồi in ra các dòng có tổng lớn hơn x.
+g/ Nhập vào 1 số y rồi in ra các dòng có trung bình cộng nhỏ hơn y.
+i/ Nhập vào 1 số z rồi tin ra các cột có tổng lớn hơn z.
+6. Viết chương trình tìm giá trị trung bình của các phần tử chẵn trong mảng nguyên một chiều
+7. Viết chương trình kiểm tra một mảng có là mảng đối xứng
+Ví dụ: a[] = {1, 2, 3, 2, 1,}, b[] = {1, 4, 4, 1} là mảng đối xứng, c[] = {1, 2, 3, 3, 1} không là mảng đối xứng.
+8. Viết chương trình xoá một phần tử trong mảng nguyên một chiều
+ví dụ:
+trước khi xóa: mang[]={1,2,3,4,5}
+sau khi xóa: mang[]={1,2,4,5}
+9. Viết chương trình xoá các phần tử giống nhau trong mảng sao cho mỗi phần tử trong mảng đều có giá trị khác nhau
+ví dụ:
+trước khi xóa: mang[]={1,2,3,1,3,4,5,5,6}
+sau khi xóa: mang[]={1,2,3,4,5,6}
+10. Viết chương trình nhập 10 số nguyên trong một mảng một chiều, sau đó sắp xếp và in mảng đó theo thứ tự tăng dần.
+11. Viết chương trình nhập một ma trận vuông 4x4, tính tổng các phần tử trên đường chéo và sau đó in kết quả.
