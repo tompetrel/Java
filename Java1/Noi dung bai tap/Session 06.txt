@@ -1,0 +1,68 @@
+﻿1. Xây dựng Class có tên Student như sau:
+	Name: String
+	Age : int
+	Marks: 
+			English : float
+			Computer : float
+			Math : float
+2. Viết phương thức (method) tạo 03 đối tượng (Object) với giá trị khởi tạo nhập từ bàn phím.
+3. Viết phương thức in ra output các Student vừa nhập theo cấu trúc sau:
+
+Student 1:
+	Name: John
+	Age: 18
+	Marks:
+		English: 8
+		Computer: 4
+		Math: 10
+---------------------------------
+Student 2:
+	Name: Peter
+	Age: 19
+	Marks:
+		English: 7
+		Computer: 6
+		Math: 9
+		
+4. Viết phưng thức in ra output điểm trung bình, theo cấu trúc sau:
+
+Student 1:
+	Name: John	
+	Marks Average: 7.50
+---------------------------------
+Student 2:
+	Name: Peter
+	Marks Average: 6.50
+	
+5. Viết phương thức xếp loại và phương thức in ra output, theo cấu trúc sau:
+
+Student 1:
+	Name: John	
+	Marks Average: 7.50
+	Level: Good
+---------------------------------
+Student 2:
+	Name: Peter
+	Marks Average: 9.50
+	Level: Excellent
+	
+Marks Average>=8: Excellent
+8<Marks Average<=6.5: Good
+6.5<Marks Average<=5: Average
+5<Marks Average<=3.5: Weak
+Marks Average<3.5: Poor
+
+
+6. In ra output các Student có điểm lần lượt English, Math, Computer cao nhất, theo cấu trúc sau:
+Number 1 Math:
+	Name: John	
+	Marks: 9.5	
+---------------------------------
+Number 1 Computer:
+	Name: Peter
+	Marks: : 10
+---------------------------------
+Number 1 English:
+	Name: Mary
+	Marks: : 9
+		
