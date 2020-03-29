@@ -1,0 +1,5 @@
+﻿Tạo interface DienTich có 2 method: dienTichHinhVuong(float a), dienTichHinhChuNhat(float a, float b)
+Tạo interface ChuVi có 2 method: chuViHinhVuong(float a), chuViHinhChuNhat(float a, float b)
+Tạo interface CongThuc thừa kế interface DienTich và ChuVi.
+Tạo class CongThucTinh để triển khai interface CongThuc.
+Tạo một thể hiện của class CongThucTinh và sử dụng các method của interface CongThucTinh.
