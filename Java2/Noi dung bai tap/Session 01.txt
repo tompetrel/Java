@@ -1,0 +1,4 @@
+﻿1. Viết chương trình thực hiện phép chia 2 số nguyên songuyen1 và songuyen2. Hiển thị kết quả của phép chia ra output
+(ketqua=songuyen1/songuyen2). Nếu songuyen2 bằng 0 thì thực hiện bắt lỗi (sử dụng try catch, hiển thị ra output thông báo 
+không thể thực hiện phép chia do songuyen2 bằng 0).
+2. Làm lại bài 1 (sử dụng User Defined Exception)
