@@ -1,0 +1,27 @@
+﻿1. Viết phương thức có tên sosanh1 để so sánh các giá trị thuộc tính của 2 đối tượng có bằng nhau hay không.
+2. Viết phương thức có tên sosanh2 để so sánh địa chỉ được cấp phát của 2 đối tượng có bằng nhau hay không.
+3. Viết phương thức có tên sosanh3 để so sánh các giá trị thuộc tính và địa chỉ được cấp phát của 2 đối tượng có bằng nhau hay không.
+4. Viết chương trình có các yêu cầu như sau:
+a. Tạo 1 file .java có 2 class có tên như sau: class1 và class2 (trong đó có class2 có phương thức main).
+class1 có thuộc tính private String nameClass1 và phương thức displayClass1.
+b. Tại class2 hiển thị tên của tất cả các thuộc tính và phương thức của class1.
+c. Tại class2 thay đổi và hiển thị giá trị thuộc tính của class1.
+5. Viết một chương trình để kiểm tra nếu một chuỗi có chứa một chuỗi khác
+6. Viết một chương trình loại bỏ từ cuối cùng trong một chuỗi
+Input : 'Hello World, Hello javadev'
+Output : Hello World, Hello
+7. Viết một chương trình loại bỏ các khoảng trống từ một chuỗi
+Sample string : 'Hello World, Hello javadev'
+Expected Output : HelloWorld,Hellojavadev
+8. Viết một chương trình để loại bỏ các ký tự ngoài trừ số, dấu phẩy và dấu chấm
+Sample string : 'zz11,235.00vnd'
+Expected Output : 11,235.00
+9. Viết một chương trình để loại bỏ các kí tự new line(xuống dòng - \n) từ một chuỗi
+Chuỗi mẫu: "Lấp lánh, lấp lánh, sao nhỏ \nTôi tự hỏi bạn là gì. \nHãy vượt lên trên thế giới cao như vậy \nGiống như một viên kim cương trên bầu trời.";
+Kết quả: "Lấp lánh, lấp lánh, sao nhỏ, Tôi tự hỏi bạn là gì. Hãy vượt lên trên thế giới cao như vậy, giống như một viên kim cương trên bầu trời."
+10. Viết một chương trình để lấy ra từ (trong ngoặc vuông) từ một chuỗi
+Input : 'Hello [javadev].'
+Output : 'javadev' 
+11. Viết một chương trình để loại bỏ tất cả các ký tự khỏi một chuỗi trừ a-z A-Z 0-9 hoặc " "
+Input : 12abcde$ddfd @abcd )der]*!#
+Output : 12abcdeddfd abcd der
