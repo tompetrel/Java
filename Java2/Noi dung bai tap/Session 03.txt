@@ -1,0 +1,7 @@
+﻿1. Viết chương trình cho phép nhập danh sách tên sinh viên trong lớp (chỉ dừng khi nhấm phím Enter). Sau đó in ra danh sách trên.
+2. Viết chương trình cho phép nhập danh sách tên sinh viên trong lớp (chỉ dừng khi nhấm phím Enter). 
+Khi nhập, do nhầm lẫn có thể nhập tên một sinh viên nhiều lần nhưng phải in ra mỗi tên đúng một lần.
+3. Viết chương trình cho phép nhập danh sách tên sinh viên trong lớp (chỉ dừng khi nhấm phím Enter).
+Với mỗi sinh viên yêu cầu nhập tên và số thứ tự của sinh viên đó trong bảng danh sách lớp.
+Sau khi nhập xong, cho phép người dùng nhập vào số thứ tự của sinh viên đó trong bảng danh sách lớp, 
+chương trình sẽ đưa ra thông tin của sinh viên có số thứ tự đó.
