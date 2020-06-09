@@ -1,5 +1,6 @@
-- Đỗ Hữu Tai 98
-- Softech Aptech
-- Batch 153-154
-- Project-Sem2 : RealEstate_Management
- 12
+create table Owners
+(
+	OwnerID int identity(1,1) primary key,
+	FistName varchar(20),
+	LastName varchar()
+)
