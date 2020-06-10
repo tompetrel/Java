@@ -1,6 +1,4 @@
-create table Owners
-(
-	OwnerID int identity(1,1) primary key,
-	FistName varchar(20),
-	LastName varchar()
-)
+java swing neatbean
+project sem 2 
+Do Huu Tai
+Softech Aptech
