@@ -1,12 +1,14 @@
 package com.exercises.language;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 /**
  *
  * @author TAI
@@ -16,16 +18,45 @@ public final class frmLanguage extends javax.swing.JFrame {
     /**
      * Creates new form frmLanguage
      */
-    void initGUI(){
+    void initGUI() {
         setLocationRelativeTo(null);
         setVisible(false);
         cmbLanguage.removeAllItems();
         cmbLanguage.addItem("English");
         cmbLanguage.addItem("Vietnamese");
         cmbNational.removeAllItems();
-        cmbNational.addItem("England");
-        cmbNational.addItem("VietNam");
+        cmbNational.addItem("United State");
+        cmbNational.addItem("Viet Nam");
     }
+
+    void changeLanguage(String language, String country) {
+        try {
+            Locale locale;
+            ResourceBundle bundle;
+            String baseName = "com.exercises.language.Language_" + language + "_" + country;
+            locale = new Locale(language, country);
+            bundle = ResourceBundle.getBundle(baseName, locale);
+            setTitle(bundle.getString("title"));
+            lblLanguage.setText(bundle.getString("lblLanguage"));
+            cmbLanguage.removeAllItems();
+            cmbLanguage.addItem(bundle.getString("cmbLanguageItem1"));
+            cmbLanguage.addItem(bundle.getString("cmbLanguageItem2"));
+            lblFirstname.setText(bundle.getString("lblFirstname"));
+            lblLastname.setText(bundle.getString("lblLastname"));
+            lblGender.setText(bundle.getString("lblGender"));
+            radioMale.setText(bundle.getString("radioMale"));
+            radioFemale.setText(bundle.getString("radioFemale"));
+            lblNational.setText(bundle.getString("lblNational"));
+            cmbNational.removeAllItems();
+            cmbNational.addItem(bundle.getString("cmbNationalItem1"));
+            cmbNational.addItem(bundle.getString("cmbNationalItem2"));
+            btnRegistry.setText(bundle.getString("btnRegistry"));
+            btnExit.setText(bundle.getString("btnExit"));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }
+
     public frmLanguage() {
         initComponents();
         initGUI();
@@ -41,16 +72,16 @@ public final class frmLanguage extends javax.swing.JFrame {
     private void initComponents() {
 
         groupGender = new javax.swing.ButtonGroup();
-        jLabel1 = new javax.swing.JLabel();
+        lblLanguage = new javax.swing.JLabel();
         cmbLanguage = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
+        lblFirstname = new javax.swing.JLabel();
         txtFirstname = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        lblLastname = new javax.swing.JLabel();
         txtLastname = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        lblGender = new javax.swing.JLabel();
         radioMale = new javax.swing.JRadioButton();
         radioFemale = new javax.swing.JRadioButton();
-        jLabel5 = new javax.swing.JLabel();
+        lblNational = new javax.swing.JLabel();
         cmbNational = new javax.swing.JComboBox<>();
         btnRegistry = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
@@ -58,15 +89,20 @@ public final class frmLanguage extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Language");
 
-        jLabel1.setText("Language:");
+        lblLanguage.setText("Lang:");
 
         cmbLanguage.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbLanguage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbLanguageActionPerformed(evt);
+            }
+        });
 
-        jLabel2.setText("First name:");
+        lblFirstname.setText("First name:");
 
-        jLabel3.setText("Last name:");
+        lblLastname.setText("Last name:");
 
-        jLabel4.setText("Gender:");
+        lblGender.setText("Gender:");
 
         groupGender.add(radioMale);
         radioMale.setText("Male");
@@ -74,7 +110,7 @@ public final class frmLanguage extends javax.swing.JFrame {
         groupGender.add(radioFemale);
         radioFemale.setText("Female");
 
-        jLabel5.setText("National:");
+        lblNational.setText("National:");
 
         cmbNational.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -94,13 +130,13 @@ public final class frmLanguage extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
+                    .addComponent(lblGender)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5))
+                            .addComponent(lblLanguage)
+                            .addComponent(lblFirstname)
+                            .addComponent(lblLastname)
+                            .addComponent(lblNational))
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(txtLastname, javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,24 +158,24 @@ public final class frmLanguage extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(lblLanguage)
                     .addComponent(cmbLanguage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lblFirstname)
                     .addComponent(txtFirstname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(lblLastname)
                     .addComponent(txtLastname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(lblGender)
                     .addComponent(radioMale)
                     .addComponent(radioFemale))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                    .addComponent(lblNational)
                     .addComponent(cmbNational, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -154,6 +190,25 @@ public final class frmLanguage extends javax.swing.JFrame {
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnExitActionPerformed
+
+    private void cmbLanguageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbLanguageActionPerformed
+        if (cmbLanguage.getSelectedItem() != null) {
+            switch (cmbLanguage.getSelectedItem().toString()) {
+                case "English":
+                    changeLanguage("en", "US");
+                    break;
+                case "Tiếng Anh":
+                    changeLanguage("en", "US");
+                    break;
+                case "Vietnamese":
+                    changeLanguage("vi", "VN");
+                    break;
+                case "Tiếng Việt":
+                    changeLanguage("vi", "VN");
+                    break;
+            }
+        }
+    }//GEN-LAST:event_cmbLanguageActionPerformed
 
     /**
      * @param args the command line arguments
@@ -196,11 +251,11 @@ public final class frmLanguage extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbLanguage;
     private javax.swing.JComboBox<String> cmbNational;
     private javax.swing.ButtonGroup groupGender;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel lblFirstname;
+    private javax.swing.JLabel lblGender;
+    private javax.swing.JLabel lblLanguage;
+    private javax.swing.JLabel lblLastname;
+    private javax.swing.JLabel lblNational;
     private javax.swing.JRadioButton radioFemale;
     private javax.swing.JRadioButton radioMale;
     private javax.swing.JTextField txtFirstname;
